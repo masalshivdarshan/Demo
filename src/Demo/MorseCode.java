@@ -90,10 +90,7 @@ public class MorseCode {
 	    	   System.out.println("ASCII Value:"+ascii);}
 	       
 	//	Integer.toBinaryString(j);
-	       
-	        
-	        
-	        morseCode(s); 
+	         morseCode(s); 
 	    } 
 
 }
