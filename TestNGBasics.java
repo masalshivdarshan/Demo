@@ -87,13 +87,13 @@ public class TestNGBasics {
 		 File src_pass=tkp.getScreenshotAs(OutputType.FILE);
 		 File dest_pass=new File("./Screen_shot/Gmail_Login_pas.png");
 		 FileHandler.copy(src_pass,dest_pass);
-		fb.findElement(By.xpath("//div[@class=\"TnvOCe k6Zj8d\" and@data-sendmethod=\"SMS\" ]")).click();
-		Thread.sleep(10000);
-		fb.findElement(By.xpath("//input[@type=\"tel\" ]")).sendKeys("436329");
-		Thread.sleep(1000);
-		fb.findElement(By.xpath("//span[contains(.,'Next')]")).click();
-		fb.findElement(By.xpath("//div[@jsname=\"UjXomb\"]")).click();
-		Thread.sleep(1000);
+//		fb.findElement(By.xpath("//div[@class=\"TnvOCe k6Zj8d\" and@data-sendmethod=\"SMS\" ]")).click();
+//		Thread.sleep(10000);
+//		fb.findElement(By.xpath("//input[@type=\"tel\" ]")).sendKeys("963295");
+//		Thread.sleep(1000);
+//		fb.findElement(By.xpath("//span[contains(.,'Next')]")).click();
+//		fb.findElement(By.xpath("//div[@jsname=\"UjXomb\"]")).click();
+//		Thread.sleep(1000);
 		//TakesScreenshot tk=(TakesScreenshot) fb;
 		// File src_email=tk.getScreenshotAs(OutputType.FILE);
 		// File dest_email=new File("./Screen_shot/Gmail_Login.png");
@@ -106,8 +106,10 @@ public class TestNGBasics {
 	 @Test
 	public void logout() throws IOException, Throwable {
 		//System.out.println("@AfterMethod: The annotated method will be run after each test method.");
-		fb.findElement(By.xpath("//a[@class=\"gb_x gb_Ca gb_f\"]")).click();
-		fb.findElement(By.xpath("//a[@id=\"gb_71\"]")).click();
+		 fb.fb.findElement(By.xpath("//span[@class='gb_xa gbii']")).click();
+		
+		fb.findElement(By.xpath("//a[@id=\"gb_71\"]")).click();////a[@id="gb_71"]
+		//fb.findElement(By.xpath("//a[@id=\"gb_71\"]")).click()
 		System.out.println("logout from app");
 		Thread.sleep(3000);
 		TakesScreenshot tkl=(TakesScreenshot) fb;
